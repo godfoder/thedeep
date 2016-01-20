@@ -1,0 +1,16 @@
+
+
+td.depth-header {
+    font-weight: bold;
+}
+
+td.lvlcell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+div.levels-box {
+    height: 100vh;
+    overflow-y: scroll;
+}
