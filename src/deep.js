@@ -110,6 +110,9 @@ function dig(depth, cell) {
                 state.wizards -= 1;
             }
             state.levels[depth][cell] = CELL_DUG;
+            if (depth+1 == state.levels.length) {
+                newLevels(NEW_LEVELS);
+            }
         }        
     } else if (state.levels[depth][cell] & CELL_DEF) {
         if (state.workers == 0) {
